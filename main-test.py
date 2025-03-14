@@ -7,6 +7,7 @@ def send_request(endpoint):
     print(f"Response from {endpoint}: {response.json()}")
 
 endpoints = ["cpu-load", "memory-load", "db-load"]
+endpoints = ["db-load",]
 
 threads = []
 for _ in range(10):  # 10 requests per endpoint
